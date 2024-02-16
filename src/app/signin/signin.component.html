@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="card position-absolute top-50 start-50 translate-middle w-card">
+        <!-- Sign In -->
+        <h6 class="bg-light text-center p-3">Sign in to your dashboard</h6>
+        <div class="card-body">
+            <form (ngSubmit)="onSubmit(username.value, password.value)">
+                <div class="mb-3 mt-3">
+                    <input type="text" class="form-control" id="username" placeholder="Username" required #username>
+                </div>
+                <div class="mb-3">
+                    <input type="password" class="form-control" id="password" placeholder="Password" required #password>
+                </div>
+                <button type="submit" class="btn btn-primary fs-btn fw-bold px-4 py-2">SIGN IN</button>
+            </form>
+        </div>
+    </div>
+</div>
